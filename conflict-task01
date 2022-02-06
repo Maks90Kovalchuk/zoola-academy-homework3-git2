@@ -1,0 +1,3 @@
+def reverse_alternate(string)
+  string.gsub(/[^\s]+/).with_index { |w, idx| idx.even? ? w : w.reverse }
+end
