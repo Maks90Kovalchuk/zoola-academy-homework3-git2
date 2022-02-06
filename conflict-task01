@@ -1,3 +1,6 @@
-def reverse_alternate(string)
-  string.gsub(/[^\s]+/).with_index { |w, idx| idx.even? ? w : w.reverse }
+def alt_reverse(string)
+  word = ""
+  chars = string.each_char.to_a
+  chars.size.times{word << chars.pop}
+  word
 end
