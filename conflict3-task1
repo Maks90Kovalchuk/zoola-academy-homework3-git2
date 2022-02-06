@@ -1,3 +1,4 @@
+0=null
 def fact(n)
   if n<= 1
     1
@@ -5,3 +6,4 @@ def fact(n)
     n * fact( n - 1 )
   end
 end
+
